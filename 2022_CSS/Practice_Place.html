@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice</title>
+    <style>
+        a {
+            color:black;
+            text-decoration: none;
+        }
+        h1 {
+            font-size: 40px;
+            text-align: center;
+        }
+        p {
+            font-size: 20px;
+        }
+        #active1 {
+            color:aqua;
+        }
+        .saw {
+            color:blue;
+        }
+        .active {
+            color:red; /* 클래스가 여러 개일때는, 순서에 영향을 받음. 가장 마지막에 정의된 값으로 변경 */
+        }
+        h2, h3{
+            border: 5px solid red;
+            padding: 20px;
+            margin: 20px;
+            display: block;
+            width: 1000px;
+        }
+    </style>
+</head> 
+<body>
+    <h1>Hello, This is a practice place. Welcome!</h1>
+    <p><a href="https://naver.com">If you click me, I'm gonna kick you to naver</a></p>
+    <p><a href="https://google.com" style="color:red;text-decoration: underline;">If you click me, I'm gonna kick you to google</a></p>
+    <p><a href="https://melon.com">If you click me, I'm gonna kick you to melon</a></p>
+
+    <br>
+    <p><a href="Practice_Place.html" class="saw">Test1</a></p>
+    <p><a href="Practice_Place.html" class="saw active">Test2</a></p>
+    <p><a href="Practice_Place.html" id="active1">Test3</a></p>
+    <p><a href="Practice_Place.html" class="saw" id="active1">Test4</a></p> <!-- 우선 순위 : id > class > tag / id 값은 한 번이 권장 -->
+
+    <h2>CSS</h2>
+    <h3>JS</h3>
+</body>
+</html>
